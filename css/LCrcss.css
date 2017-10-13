@@ -1,0 +1,212 @@
+html, body{
+    height:100%;
+}
+/***********************************************************
+ Common general styles go here
+***********************************************************/
+body{
+    @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Rubik+Mono+One');
+    @import url('https://fonts.googleapis.com/css?family=Orbitron');
+    background-color: #222;
+    color:#EEE;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+h1, h2, h3, h4{
+    color:#a60002;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p{
+    text-align: justify;
+}
+
+/***********************************************************
+  Proyectos
+***********************************************************/
+
+
+/***********************************************************
+  En Construcción
+***********************************************************/
+
+#Construccion{
+    background-color: #171717;
+    border-color: #780000;
+    border-style: solid;
+    height: 250px;
+    margin: 10em auto;
+    width: 500px;
+    
+}
+
+#Construccion h1{
+    font-weight: bold;
+    margin: auto 0;
+    line-height: 250px;
+}
+
+/***********************************************************
+  Header
+***********************************************************/
+/*1.1 Nav */
+nav ul{
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+}
+
+nav ul li{
+	display: inline-block;
+    margin: 0 .1em;
+    padding: .1em .1em;
+    text-transform: uppercase;
+}
+
+nav li a{
+    color: #EEE;
+	display: inline-block;
+    margin: 0 .1em;
+    padding: .1em .1em;
+	text-decoration: none;
+}
+
+
+/***********************************************************
+  Contacto
+***********************************************************/
+
+#Contacto input{
+    background-color: #151515;
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    color: #FFF;
+}
+
+#Contacto form{
+    float:none;
+    margin: 0 auto;
+}
+
+#Contacto textarea.form-control{
+    background-color: #151515;
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    color: #FFF;
+    margin-bottom: 1em;
+    resize: none;
+}
+
+/***********************************************************
+Bio
+***********************************************************/
+.BioTitle{
+    border-bottom: solid #ff0000;
+    text-align:left; 
+}
+
+.BioText {
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    text-align: justify;
+}
+
+.SkillTitle{
+    border-bottom: solid #ff0000;
+    text-align:right; 
+}
+
+.SkillText{
+    list-style: none;
+    text-align:right; 
+}
+
+/***********************************************************
+Servicios
+***********************************************************/
+#Servicios .carousel-inner{
+    height: 400px;
+}
+
+/***********************************************************
+Mobiles in portrait mode
+***********************************************************/
+@media only screen and (max-width: 302px){
+}
+
+/***********************************************************
+Mobiles in landscape mode
+***********************************************************/
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+/*Add your style code here*/
+    #Servicios .ServCont{
+        height: 100vh;
+    }
+}
+
+/***********************************************************
+Tablets
+***********************************************************/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+/*Add your style code here*/
+
+}
+
+/***********************************************************
+Desktops and Laptos computers
+***********************************************************/
+@media only screen and (min-width: 1224px) {
+/*Add your style code here*/
+
+}
+
+/***********************************************************
+Very large screen devices
+***********************************************************/
+@media only screen and (min-width: 1824px) {
+/*Add your style code here*/
+
+}
+
+
+/***********************************************************
+  Globals
+***********************************************************/
+#CarouselActivi {
+	margin-top: 60px;
+}
+
+#CarouselActivi .item { 
+    height: 400px; 
+    width: 100%;
+}
+
+.carousel{
+    width: 100%;
+}
+
+.carousel-content {
+    margin: 0 auto;
+	text-align: justify;
+    width: 60%;
+}
+
+.carousel-content h2 {
+	font-size: 2em;
+}
+
+.carousel-control{
+    height: 400px;
+}
+
+/***********************************************************
+  Globals
+***********************************************************/
+
+/***********************************************************
+  Globals
+***********************************************************/
