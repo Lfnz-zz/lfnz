@@ -4,5 +4,6 @@
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/materialize.min.js"></script>
         <script src="js/slick.min.js"></script>
+        <script src="js/CrJs.js"></script>
     </body>
 </html>
