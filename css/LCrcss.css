@@ -80,10 +80,10 @@ nav li a{
 ***********************************************************/
 
 #Contacto input{
-    background-color: #151515;
+    /*background-color: #151515;
     border: 2px solid #ff0000;
     border-radius: 10px;
-    color: #FFF;
+    color: #FFF;*/
 }
 
 #Contacto form{
@@ -92,12 +92,12 @@ nav li a{
 }
 
 #Contacto textarea.form-control{
-    background-color: #151515;
+   /* background-color: #151515;
     border: 2px solid #ff0000;
     border-radius: 10px;
     color: #FFF;
     margin-bottom: 1em;
-    resize: none;
+    resize: none;*/
 }
 
 /***********************************************************

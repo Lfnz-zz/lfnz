@@ -59,25 +59,4 @@
 </section>
 
 <!-- Contacto -->
-<section id="Contacto">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3>Si tienes alguna duda, contactanos</h3>
-                <form align="center">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="InputName" placeholder="Nombre">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="InputEmail" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" class="form-control" id="InputPhone" placeholder="Telefono">
-                    </div>
-                    <textarea class="form-control" rows="10" placeholder="Deja tu Mensaje"></textarea>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
+<?php include('pages/Contacto.php');?>
