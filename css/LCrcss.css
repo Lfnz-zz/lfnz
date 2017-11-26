@@ -20,6 +20,22 @@ h1, h2, h3, h4{
     text-transform: uppercase;
 }
 
+h1{
+   font-size: 2em; 
+}
+
+h2{
+   font-size: 1.5em;  
+}
+
+h3{
+   font-size: 1.25em;  
+}
+
+h4{
+  font-size: .8em;   
+}
+
 p{
     text-align: justify;
 }
@@ -143,8 +159,12 @@ Mobiles in landscape mode
 ***********************************************************/
 @media only screen and (min-width: 321px) and (max-width: 480px) {
 /*Add your style code here*/
+    #Servicios h2{
+        text-align: left;
+    }
+    
     #Servicios .ServCont{
-        height: 100vh;
+       height: 100vh; 
     }
 }
 
