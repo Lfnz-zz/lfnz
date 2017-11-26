@@ -94,12 +94,17 @@ nav li a{
 /***********************************************************
   Contacto
 ***********************************************************/
+#Contacto{
+    background-color: #151515;
+    margin: 0 auto;
+}
 
 #Contacto input{
-    /*background-color: #151515;
-    border: 2px solid #ff0000;
-    border-radius: 10px;
-    color: #FFF;*/
+    border-bottom: 2px solid #a60002;
+}
+
+#Contacto .input-field .prefix{
+    color:#630001;
 }
 
 #Contacto form{
@@ -107,15 +112,35 @@ nav li a{
     margin: 0 auto;
 }
 
-#Contacto textarea.form-control{
-   /* background-color: #151515;
-    border: 2px solid #ff0000;
-    border-radius: 10px;
-    color: #FFF;
-    margin-bottom: 1em;
-    resize: none;*/
+#Contacto label{
+    color:#a60002;
 }
 
+#Contacto textarea.form-control{
+    border-bottom: 2px solid #a60002;
+}
+
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+input[type=password]:not(.browser-default):focus:not([readonly]) + label,
+input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+input[type=url]:not(.browser-default):focus:not([readonly]) + label,
+input[type=time]:not(.browser-default):focus:not([readonly]) + label,
+input[type=date]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label,
+input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
+input[type=number]:not(.browser-default):focus:not([readonly]) + label,
+input[type=search]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #a60002;
+}
+
+input.valid:not([type]), input.valid:not([type]):focus, input[type="text"].valid:not(.browser-default), input[type="text"].valid:not(.browser-default):focus, input[type="password"].valid:not(.browser-default), input[type="password"].valid:not(.browser-default):focus, input[type="email"].valid:not(.browser-default), input[type="email"].valid:not(.browser-default):focus, input[type="url"].valid:not(.browser-default), input[type="url"].valid:not(.browser-default):focus, input[type="time"].valid:not(.browser-default), input[type="time"].valid:not(.browser-default):focus, input[type="date"].valid:not(.browser-default), input[type="date"].valid:not(.browser-default):focus, input[type="datetime"].valid:not(.browser-default), input[type="datetime"].valid:not(.browser-default):focus, input[type="datetime-local"].valid:not(.browser-default), input[type="datetime-local"].valid:not(.browser-default):focus, input[type="tel"].valid:not(.browser-default), input[type="tel"].valid:not(.browser-default):focus, input[type="number"].valid:not(.browser-default), input[type="number"].valid:not(.browser-default):focus, input[type="search"].valid:not(.browser-default), input[type="search"].valid:not(.browser-default):focus, textarea.materialize-textarea.valid, textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-dropdown {
+    border-bottom: 1px solid #a60002;
+    -webkit-box-shadow: 0 1px 0 0 #a60002;
+    box-shadow: 0 1px 0 0 #a60002;
+}
 /***********************************************************
 Bio
 ***********************************************************/
