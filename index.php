@@ -16,6 +16,9 @@ if(isset($_GET['page']))
 				case "bio":
 					include('pages/bio.php');
 					break;
+                case "cv":
+					include('pages/cv.php');
+					break;
 				default:
 					include('pages/404.php');
 					break;

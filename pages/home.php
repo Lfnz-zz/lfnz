@@ -59,4 +59,4 @@
 </section>
 
 <!-- Contacto -->
-<?php include('pages/Contacto.php');?>
+<?php include('pages/contacto.php');?>
