@@ -5,6 +5,7 @@
                     <div class="container">
                         <div class="row">
                             <form class="col s12">
+                                <h2>Contacto</h2>
                                 <div class="row">
                                     <div class="input-field col s6">
                                         <i class="material-icons prefix">account_circle</i>

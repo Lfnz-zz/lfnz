@@ -96,15 +96,18 @@ nav li a{
 ***********************************************************/
 #Contacto{
     background-color: #151515;
+    border: 2px dashed #a60002;
+    border-radius: 1em;
     margin: 0 auto;
+    padding: .5em;
 }
 
 #Contacto input{
-    border-bottom: 2px solid #a60002;
+    border-bottom: 2px solid #EEE;
 }
 
 #Contacto .input-field .prefix{
-    color:#630001;
+    color:#a60002;
 }
 
 #Contacto form{
@@ -113,11 +116,11 @@ nav li a{
 }
 
 #Contacto label{
-    color:#a60002;
+    color:#EEE;
 }
 
 #Contacto textarea.form-control{
-    border-bottom: 2px solid #a60002;
+    border-bottom: 2px solid #EEE;
 }
 
 input:not([type]):focus:not([readonly]) + label,
@@ -133,13 +136,13 @@ input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
 input[type=number]:not(.browser-default):focus:not([readonly]) + label,
 input[type=search]:not(.browser-default):focus:not([readonly]) + label,
 textarea.materialize-textarea:focus:not([readonly]) + label {
-  color: #a60002;
+  color: #EEE;
 }
 
 input.valid:not([type]), input.valid:not([type]):focus, input[type="text"].valid:not(.browser-default), input[type="text"].valid:not(.browser-default):focus, input[type="password"].valid:not(.browser-default), input[type="password"].valid:not(.browser-default):focus, input[type="email"].valid:not(.browser-default), input[type="email"].valid:not(.browser-default):focus, input[type="url"].valid:not(.browser-default), input[type="url"].valid:not(.browser-default):focus, input[type="time"].valid:not(.browser-default), input[type="time"].valid:not(.browser-default):focus, input[type="date"].valid:not(.browser-default), input[type="date"].valid:not(.browser-default):focus, input[type="datetime"].valid:not(.browser-default), input[type="datetime"].valid:not(.browser-default):focus, input[type="datetime-local"].valid:not(.browser-default), input[type="datetime-local"].valid:not(.browser-default):focus, input[type="tel"].valid:not(.browser-default), input[type="tel"].valid:not(.browser-default):focus, input[type="number"].valid:not(.browser-default), input[type="number"].valid:not(.browser-default):focus, input[type="search"].valid:not(.browser-default), input[type="search"].valid:not(.browser-default):focus, textarea.materialize-textarea.valid, textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-dropdown {
-    border-bottom: 1px solid #a60002;
-    -webkit-box-shadow: 0 1px 0 0 #a60002;
-    box-shadow: 0 1px 0 0 #a60002;
+    border-bottom: 1px solid #EEE;
+    -webkit-box-shadow: 0 1px 0 0 #EEE;
+    box-shadow: 0 1px 0 0 #EEE;
 }
 /***********************************************************
 Bio
