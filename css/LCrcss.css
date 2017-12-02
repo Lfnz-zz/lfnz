@@ -191,10 +191,6 @@ Servicios
 /***********************************************************
 CV
 ***********************************************************/
-.Cv .container{
-    width: 100%;
-}
-
 .CvAside{
     background-color: aqua;
     text-align: left;
@@ -268,7 +264,10 @@ Desktops and Laptos computers
 ***********************************************************/
 @media only screen and (min-width: 1224px) {
 /*Add your style code here*/
-
+.CvAside{
+    background-color: aqua;
+    height: 100vh;
+    text-align: left;
 }
 
 /***********************************************************
