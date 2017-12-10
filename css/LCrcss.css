@@ -5,6 +5,7 @@ html, body{
  Common general styles go here
 ***********************************************************/
 body{
+    @import url('https://fonts.googleapis.com/css?family=EB+Garamond');
     @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Rubik+Mono+One');
     @import url('https://fonts.googleapis.com/css?family=Orbitron');
     background-color: #222;
@@ -191,15 +192,34 @@ Servicios
 /***********************************************************
 CV
 ***********************************************************/
+#Cv{
+    font-family: 'EB Garamond', serif;
+    text-align: justify;
+}
+
 .CvAside{
-    background-color: aqua;
-    text-align: left;
+
 }
 
 .CvBside{
-    background-color:bisque;
-    text-align: left;
+
 }
+
+.CvDatPer{
+    padding: 1em 0 0 0;
+}
+
+.CvDatPer h1, h4{
+    margin: 0;
+    padding: 0;
+}
+
+.CvPerfil ul{
+    column-count: 2;
+    column-gap: 1em;
+}
+
+
 
 /***********************************************************
   Globals
@@ -265,11 +285,14 @@ Desktops and Laptos computers
 @media only screen and (min-width: 1224px) {
 /*Add your style code here*/
 .CvAside{
-    background-color: aqua;
     height: 100vh;
     text-align: left;
 }
 
+.CvBside{
+    height: 100vh;
+    text-align: left;
+}
 /***********************************************************
 Very large screen devices
 ***********************************************************/
