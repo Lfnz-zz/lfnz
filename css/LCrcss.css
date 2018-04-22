@@ -1,15 +1,18 @@
-html, body{
-    height:100%;
-}
 /***********************************************************
  Common general styles go here
 ***********************************************************/
+html, body{
+    height:100%;
+}
+
 body{
     @import url('https://fonts.googleapis.com/css?family=EB+Garamond');
     @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Rubik+Mono+One');
     @import url('https://fonts.googleapis.com/css?family=Orbitron');
-    background-color: #222;
-    color:#EEE;
+    background-color: #EEE;
+    color:#222;
+    /*background-color: #222;
+    color:#EEE;*/
     font-family: 'Cormorant Garamond', serif;
     font-size: 16px;
     text-align: center;
@@ -45,17 +48,77 @@ p{
   Proyectos
 ***********************************************************/
 
+/***********************************************************
+Home
+***********************************************************/
+.PHero, .Sectio2{
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    opacity: 0.7;
+}
+
+.PHero{
+    background-image: url('../img/hero-img.png');
+    min-height: 100vh;
+}
+
+.PText{
+    position:absolute;
+    top:50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 2em;
+    letter-spacing: .5em;
+    text-transform: uppercase;
+}
+
+.PText .PBorder{
+    border: 2px solid #000;
+    color:#000;
+    padding: 1.5em;
+}
 
 /***********************************************************
   NAV
 ***********************************************************/
 
 nav {
-    color: #fff;
     background-color: #222;
-    width: 100%;
+    border-radius: 0 0 12px 12px;
+    color: #fff;
     height: 56px;
     line-height: 56px;
+    margin: 0 auto;
+    position: fixed;
+    width: 50%;
+    top: 0;
+	left: 0;
+	right: 0;
+}
+
+nav ul{
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+}
+
+nav ul li{
+	display: inline-block;
+    margin: 0 .1em;
+    padding: .1em .1em;
+    text-transform: uppercase;
+}
+
+nav li a{
+    color: #EEE;
+	display: inline-block;
+    margin: 0 .1em;
+    padding: .1em .1em;
+	text-decoration: none;
 }
 
 /***********************************************************
@@ -81,28 +144,6 @@ nav {
 /***********************************************************
   Header
 ***********************************************************/
-/*1.1 Nav */
-nav ul{
-	list-style: none;
-	margin: 0 auto;
-	padding: 0;
-}
-
-nav ul li{
-	display: inline-block;
-    margin: 0 .1em;
-    padding: .1em .1em;
-    text-transform: uppercase;
-}
-
-nav li a{
-    color: #EEE;
-	display: inline-block;
-    margin: 0 .1em;
-    padding: .1em .1em;
-	text-decoration: none;
-}
-
 
 /***********************************************************
   Contacto
@@ -136,27 +177,6 @@ nav li a{
     border-bottom: 2px solid #EEE;
 }
 
-input:not([type]):focus:not([readonly]) + label,
-input[type=text]:not(.browser-default):focus:not([readonly]) + label,
-input[type=password]:not(.browser-default):focus:not([readonly]) + label,
-input[type=email]:not(.browser-default):focus:not([readonly]) + label,
-input[type=url]:not(.browser-default):focus:not([readonly]) + label,
-input[type=time]:not(.browser-default):focus:not([readonly]) + label,
-input[type=date]:not(.browser-default):focus:not([readonly]) + label,
-input[type=datetime]:not(.browser-default):focus:not([readonly]) + label,
-input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label,
-input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
-input[type=number]:not(.browser-default):focus:not([readonly]) + label,
-input[type=search]:not(.browser-default):focus:not([readonly]) + label,
-textarea.materialize-textarea:focus:not([readonly]) + label {
-  color: #EEE;
-}
-
-input.valid:not([type]), input.valid:not([type]):focus, input[type="text"].valid:not(.browser-default), input[type="text"].valid:not(.browser-default):focus, input[type="password"].valid:not(.browser-default), input[type="password"].valid:not(.browser-default):focus, input[type="email"].valid:not(.browser-default), input[type="email"].valid:not(.browser-default):focus, input[type="url"].valid:not(.browser-default), input[type="url"].valid:not(.browser-default):focus, input[type="time"].valid:not(.browser-default), input[type="time"].valid:not(.browser-default):focus, input[type="date"].valid:not(.browser-default), input[type="date"].valid:not(.browser-default):focus, input[type="datetime"].valid:not(.browser-default), input[type="datetime"].valid:not(.browser-default):focus, input[type="datetime-local"].valid:not(.browser-default), input[type="datetime-local"].valid:not(.browser-default):focus, input[type="tel"].valid:not(.browser-default), input[type="tel"].valid:not(.browser-default):focus, input[type="number"].valid:not(.browser-default), input[type="number"].valid:not(.browser-default):focus, input[type="search"].valid:not(.browser-default), input[type="search"].valid:not(.browser-default):focus, textarea.materialize-textarea.valid, textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-dropdown {
-    border-bottom: 1px solid #EEE;
-    -webkit-box-shadow: 0 1px 0 0 #EEE;
-    box-shadow: 0 1px 0 0 #EEE;
-}
 /***********************************************************
 Bio
 ***********************************************************/
@@ -219,8 +239,6 @@ CV
     column-gap: 1em;
 }
 
-
-
 /***********************************************************
   Globals
 ***********************************************************/
@@ -251,18 +269,9 @@ CV
     height: 400px;
 }
 
-/***********************************************************
-Mobiles in portrait mode
-***********************************************************/
-@media only screen and (max-width: 302px){
-}
-
-/***********************************************************
-Mobiles in landscape mode
-***********************************************************/
-@media only screen and (min-width: 321px) and (max-width: 480px) {
-/*Add your style code here*/
-    #Servicios h2{
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+     #Servicios h2{
         text-align: left;
     }
     
@@ -271,38 +280,14 @@ Mobiles in landscape mode
     }
 }
 
-/***********************************************************
-Tablets
-***********************************************************/
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-/*Add your style code here*/
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) { ... }
 
-}
+/*Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { ... }
 
-/***********************************************************
-Desktops and Laptos computers
-***********************************************************/
-@media only screen and (min-width: 1224px) {
-/*Add your style code here*/
-.CvAside{
-    height: 100vh;
-    text-align: left;
-}
-
-.CvBside{
-    height: 100vh;
-    text-align: left;
-}
-/***********************************************************
-Very large screen devices
-***********************************************************/
-@media only screen and (min-width: 1824px) {
-/*Add your style code here*/
-
-}
-
-
-
+/*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) { ... }
 
 /***********************************************************
   Globals
