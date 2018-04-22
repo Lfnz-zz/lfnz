@@ -1,0 +1,317 @@
+html, body{
+    height:100%;
+}
+/***********************************************************
+ Common general styles go here
+***********************************************************/
+body{
+    @import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+    @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Rubik+Mono+One');
+    @import url('https://fonts.googleapis.com/css?family=Orbitron');
+    background-color: #EEE;
+    color:#222;
+    /*background-color: #222;
+    color:#EEE;*/
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+h1, h2, h3, h4{
+    color:#a60002;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h1{
+   font-size: 2em; 
+}
+
+h2{
+   font-size: 1.5em;  
+}
+
+h3{
+   font-size: 1.25em;  
+}
+
+h4{
+  font-size: .8em;   
+}
+
+p{
+    text-align: justify;
+}
+
+/***********************************************************
+  Proyectos
+***********************************************************/
+
+
+/***********************************************************
+  NAV
+***********************************************************/
+
+nav {
+    background-color: #222;
+    border-radius: 0 0 12px 12px;
+    color: #fff;
+    height: 56px;
+    line-height: 56px;
+    margin: 0 auto;
+    position: fixed;
+    width: 50%;
+    top: 0;
+	left: 0;
+	right: 0;
+}
+
+/***********************************************************
+  En Construcción
+***********************************************************/
+
+#Construccion{
+    background-color: #171717;
+    border-color: #780000;
+    border-style: solid;
+    height: 250px;
+    margin: 10em auto;
+    width: 500px;
+    
+}
+
+#Construccion h1{
+    font-weight: bold;
+    margin: auto 0;
+    line-height: 250px;
+}
+
+/***********************************************************
+  Header
+***********************************************************/
+/*1.1 Nav */
+nav ul{
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+}
+
+nav ul li{
+	display: inline-block;
+    margin: 0 .1em;
+    padding: .1em .1em;
+    text-transform: uppercase;
+}
+
+nav li a{
+    color: #EEE;
+	display: inline-block;
+    margin: 0 .1em;
+    padding: .1em .1em;
+	text-decoration: none;
+}
+
+
+/***********************************************************
+  Contacto
+***********************************************************/
+#Contacto{
+    background-color: #151515;
+    border: 2px dashed #a60002;
+    border-radius: 1em;
+    margin: 0 auto;
+    padding: .5em;
+}
+
+#Contacto input{
+    border-bottom: 2px solid #EEE;
+}
+
+#Contacto .input-field .prefix{
+    color:#a60002;
+}
+
+#Contacto form{
+    float:none;
+    margin: 0 auto;
+}
+
+#Contacto label{
+    color:#EEE;
+}
+
+#Contacto textarea.form-control{
+    border-bottom: 2px solid #EEE;
+}
+
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+input[type=password]:not(.browser-default):focus:not([readonly]) + label,
+input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+input[type=url]:not(.browser-default):focus:not([readonly]) + label,
+input[type=time]:not(.browser-default):focus:not([readonly]) + label,
+input[type=date]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label,
+input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
+input[type=number]:not(.browser-default):focus:not([readonly]) + label,
+input[type=search]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #EEE;
+}
+
+input.valid:not([type]), input.valid:not([type]):focus, input[type="text"].valid:not(.browser-default), input[type="text"].valid:not(.browser-default):focus, input[type="password"].valid:not(.browser-default), input[type="password"].valid:not(.browser-default):focus, input[type="email"].valid:not(.browser-default), input[type="email"].valid:not(.browser-default):focus, input[type="url"].valid:not(.browser-default), input[type="url"].valid:not(.browser-default):focus, input[type="time"].valid:not(.browser-default), input[type="time"].valid:not(.browser-default):focus, input[type="date"].valid:not(.browser-default), input[type="date"].valid:not(.browser-default):focus, input[type="datetime"].valid:not(.browser-default), input[type="datetime"].valid:not(.browser-default):focus, input[type="datetime-local"].valid:not(.browser-default), input[type="datetime-local"].valid:not(.browser-default):focus, input[type="tel"].valid:not(.browser-default), input[type="tel"].valid:not(.browser-default):focus, input[type="number"].valid:not(.browser-default), input[type="number"].valid:not(.browser-default):focus, input[type="search"].valid:not(.browser-default), input[type="search"].valid:not(.browser-default):focus, textarea.materialize-textarea.valid, textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-dropdown {
+    border-bottom: 1px solid #EEE;
+    -webkit-box-shadow: 0 1px 0 0 #EEE;
+    box-shadow: 0 1px 0 0 #EEE;
+}
+/***********************************************************
+Bio
+***********************************************************/
+.BioTitle{
+    border-bottom: solid #ff0000;
+    text-align:left; 
+}
+
+.BioText {
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    text-align: justify;
+}
+
+.SkillTitle{
+    border-bottom: solid #ff0000;
+    text-align:right; 
+}
+
+.SkillText{
+    list-style: none;
+    text-align:right; 
+}
+
+/***********************************************************
+Servicios
+***********************************************************/
+#Servicios .carousel-inner{
+    height: 400px;
+}
+
+/***********************************************************
+CV
+***********************************************************/
+#Cv{
+    font-family: 'EB Garamond', serif;
+    text-align: justify;
+}
+
+.CvAside{
+
+}
+
+.CvBside{
+
+}
+
+.CvDatPer{
+    padding: 1em 0 0 0;
+}
+
+.CvDatPer h1, h4{
+    margin: 0;
+    padding: 0;
+}
+
+.CvPerfil ul{
+    column-count: 2;
+    column-gap: 1em;
+}
+
+/***********************************************************
+  Globals
+***********************************************************/
+#CarouselActivi {
+	margin-top: 60px;
+}
+
+#CarouselActivi .item { 
+    height: 400px; 
+    width: 100%;
+}
+
+.carousel{
+    width: 100%;
+}
+
+.carousel-content {
+    margin: 0 auto;
+	text-align: justify;
+    width: 60%;
+}
+
+.carousel-content h2 {
+	font-size: 2em;
+}
+
+.carousel-control{
+    height: 400px;
+}
+
+/***********************************************************
+Mobiles in portrait mode
+***********************************************************/
+@media only screen and (max-width: 302px){
+}
+
+/***********************************************************
+Mobiles in landscape mode
+***********************************************************/
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+/*Add your style code here*/
+    #Servicios h2{
+        text-align: left;
+    }
+    
+    #Servicios .ServCont{
+       height: 100vh; 
+    }
+}
+
+/***********************************************************
+Tablets
+***********************************************************/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+/*Add your style code here*/
+
+}
+
+/***********************************************************
+Desktops and Laptos computers
+***********************************************************/
+@media only screen and (min-width: 1224px) {
+/*Add your style code here*/
+.CvAside{
+    height: 100vh;
+    text-align: left;
+}
+
+.CvBside{
+    height: 100vh;
+    text-align: left;
+}
+/***********************************************************
+Very large screen devices
+***********************************************************/
+@media only screen and (min-width: 1824px) {
+/*Add your style code here*/
+
+}
+
+
+/***********************************************************
+  Globals
+***********************************************************/
+
+/***********************************************************
+  Globals
+***********************************************************/
